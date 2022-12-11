@@ -2,240 +2,240 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.claudiobertani.com/</loc>
+    <loc>https://claudiob25.github.io/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/"
+                href="https://claudiob25.github.io/it/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/"
+                href="https://claudiob25.github.io/"
                 />
   </url><url>
-    <loc>http://www.claudiobertani.com/series/hugo/</loc>
+    <loc>https://claudiob25.github.io/series/hugo/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/mermaid-support/</loc>
+    <loc>https://claudiob25.github.io/posts/mermaid-support/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="http://www.claudiobertani.com/it/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://www.claudiobertani.com/posts/"
-                />
-  </url><url>
-    <loc>http://www.claudiobertani.com/series/</loc>
+    <loc>https://claudiob25.github.io/posts/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/series/"
+                href="https://claudiob25.github.io/it/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/series/"
+                href="https://claudiob25.github.io/posts/"
                 />
   </url><url>
-    <loc>http://www.claudiobertani.com/series/theme/</loc>
+    <loc>https://claudiob25.github.io/series/</loc>
+    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/series/"
+                />
+  </url><url>
+    <loc>https://claudiob25.github.io/series/theme/</loc>
     <lastmod>2022-07-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/categories/</loc>
+    <loc>https://claudiob25.github.io/categories/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/categories/"
+                href="https://claudiob25.github.io/it/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/categories/"
+                href="https://claudiob25.github.io/categories/"
                 />
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/css/</loc>
+    <loc>https://claudiob25.github.io/tags/css/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/html/</loc>
+    <loc>https://claudiob25.github.io/tags/html/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/html-and-css-only-tabs/</loc>
+    <loc>https://claudiob25.github.io/posts/html-and-css-only-tabs/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/markdown/</loc>
+    <loc>https://claudiob25.github.io/tags/markdown/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/categories/syntax/</loc>
+    <loc>https://claudiob25.github.io/categories/syntax/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/</loc>
+    <loc>https://claudiob25.github.io/tags/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/tags/"
+                href="https://claudiob25.github.io/it/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/tags/"
+                href="https://claudiob25.github.io/tags/"
                 />
   </url><url>
-    <loc>http://www.claudiobertani.com/categories/themes/</loc>
+    <loc>https://claudiob25.github.io/categories/themes/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/series/themes-guide/</loc>
+    <loc>https://claudiob25.github.io/series/themes-guide/</loc>
     <lastmod>2022-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/markdown-syntax.pt-br/</loc>
+    <loc>https://claudiob25.github.io/posts/markdown-syntax.pt-br/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/series/guia-do-thema/</loc>
+    <loc>https://claudiob25.github.io/series/guia-do-thema/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/markdown-syntax/</loc>
+    <loc>https://claudiob25.github.io/posts/markdown-syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/categories/sintaxe/</loc>
+    <loc>https://claudiob25.github.io/categories/sintaxe/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/categories/temas/</loc>
+    <loc>https://claudiob25.github.io/categories/temas/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/rich-content.pt-br/</loc>
+    <loc>https://claudiob25.github.io/posts/rich-content.pt-br/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/privacy/</loc>
+    <loc>https://claudiob25.github.io/tags/privacy/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/rich-content/</loc>
+    <loc>https://claudiob25.github.io/posts/rich-content/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/shortcodes/</loc>
+    <loc>https://claudiob25.github.io/tags/shortcodes/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/more-rich-content.pt-br/</loc>
+    <loc>https://claudiob25.github.io/posts/more-rich-content.pt-br/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/more-rich-content/</loc>
+    <loc>https://claudiob25.github.io/posts/more-rich-content/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/placeholder-text/</loc>
+    <loc>https://claudiob25.github.io/posts/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/text/</loc>
+    <loc>https://claudiob25.github.io/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/placeholder-text.pt-br/</loc>
+    <loc>https://claudiob25.github.io/posts/placeholder-text.pt-br/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/math-typesetting.pt-br/</loc>
+    <loc>https://claudiob25.github.io/posts/math-typesetting.pt-br/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/math-typesetting/</loc>
+    <loc>https://claudiob25.github.io/posts/math-typesetting/</loc>
     <lastmod>2019-03-08T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/emoji/</loc>
+    <loc>https://claudiob25.github.io/tags/emoji/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/tags/emoji/"
+                href="https://claudiob25.github.io/it/tags/emoji/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/tags/emoji/"
+                href="https://claudiob25.github.io/tags/emoji/"
                 />
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/emoji-support/</loc>
+    <loc>https://claudiob25.github.io/posts/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/posts/emoji-support/"
+                href="https://claudiob25.github.io/it/posts/emoji-support/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/posts/emoji-support/"
+                href="https://claudiob25.github.io/posts/emoji-support/"
                 />
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/development/</loc>
+    <loc>https://claudiob25.github.io/tags/development/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/categories/development/</loc>
+    <loc>https://claudiob25.github.io/categories/development/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/hugo-coder-wiki/</loc>
+    <loc>https://claudiob25.github.io/posts/hugo-coder-wiki/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/hugo/</loc>
+    <loc>https://claudiob25.github.io/tags/hugo/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/posts/hugo-coder-wiki/</loc>
+    <loc>https://claudiob25.github.io/posts/hugo-coder-wiki/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/tags/themes/</loc>
+    <loc>https://claudiob25.github.io/tags/themes/</loc>
     <lastmod>2019-03-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.claudiobertani.com/about/</loc>
+    <loc>https://claudiob25.github.io/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/about/"
+                href="https://claudiob25.github.io/it/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/about/"
+                href="https://claudiob25.github.io/about/"
                 />
   </url><url>
-    <loc>http://www.claudiobertani.com/authors/</loc>
+    <loc>https://claudiob25.github.io/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/authors/"
+                href="https://claudiob25.github.io/it/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/authors/"
+                href="https://claudiob25.github.io/authors/"
                 />
   </url><url>
-    <loc>http://www.claudiobertani.com/contact/</loc>
+    <loc>https://claudiob25.github.io/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/contact/"
+                href="https://claudiob25.github.io/it/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/contact/"
+                href="https://claudiob25.github.io/contact/"
                 />
   </url><url>
-    <loc>http://www.claudiobertani.com/projects/</loc>
+    <loc>https://claudiob25.github.io/projects/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="http://www.claudiobertani.com/it/projects/"
+                href="https://claudiob25.github.io/it/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://www.claudiobertani.com/projects/"
+                href="https://claudiob25.github.io/projects/"
                 />
   </url>
 </urlset>
