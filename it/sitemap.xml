@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://claudiob25.github.io/it/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,34 +15,8 @@
                 href="https://claudiob25.github.io/it/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/it/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/tags/emoji/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/tags/emoji/"
-                />
-  </url><url>
-    <loc>https://claudiob25.github.io/it/posts/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/posts/"
-                />
-  </url><url>
     <loc>https://claudiob25.github.io/it/posts/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,8 +28,47 @@
                 href="https://claudiob25.github.io/it/posts/emoji-support/"
                 />
   </url><url>
+    <loc>https://claudiob25.github.io/it/tags/forge/</loc>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/tags/forge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/tags/forge/"
+                />
+  </url><url>
+    <loc>https://claudiob25.github.io/it/tags/jira/</loc>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/tags/jira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/tags/jira/"
+                />
+  </url><url>
+    <loc>https://claudiob25.github.io/it/posts/</loc>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/posts/"
+                />
+  </url><url>
     <loc>https://claudiob25.github.io/it/tags/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"

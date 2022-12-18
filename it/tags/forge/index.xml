@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Claudio Bertani</title>
-    <link>https://claudiob25.github.io/it/posts/</link>
-    <description>Recent content in Posts on Claudio Bertani</description>
+    <title>forge on Claudio Bertani</title>
+    <link>https://claudiob25.github.io/it/tags/forge/</link>
+    <description>Recent content in forge on Claudio Bertani</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudiob25.github.io/it/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudiob25.github.io/it/tags/forge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creare un plugin Jira con forge - Real use case</title>
       <link>https://claudiob25.github.io/it/posts/emoji-support/</link>

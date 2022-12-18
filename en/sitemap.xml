@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://claudiob25.github.io/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -15,151 +15,8 @@
                 href="https://claudiob25.github.io/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/series/hugo/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/mermaid-support/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/posts/"
-                />
-  </url><url>
-    <loc>https://claudiob25.github.io/series/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/series/"
-                />
-  </url><url>
-    <loc>https://claudiob25.github.io/series/theme/</loc>
-    <lastmod>2022-07-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/categories/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/categories/"
-                />
-  </url><url>
-    <loc>https://claudiob25.github.io/tags/css/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/tags/html/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/html-and-css-only-tabs/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/tags/markdown/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/categories/syntax/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/tags/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://claudiob25.github.io/categories/themes/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/series/themes-guide/</loc>
-    <lastmod>2022-05-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/markdown-syntax.pt-br/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/series/guia-do-thema/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/categories/sintaxe/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/categories/temas/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/rich-content.pt-br/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/more-rich-content.pt-br/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/more-rich-content/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/placeholder-text.pt-br/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/math-typesetting.pt-br/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/tags/emoji/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/tags/emoji/"
-                />
-  </url><url>
     <loc>https://claudiob25.github.io/posts/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -171,23 +28,57 @@
                 href="https://claudiob25.github.io/posts/emoji-support/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/tags/development/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
+    <loc>https://claudiob25.github.io/tags/forge/</loc>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/tags/forge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/tags/forge/"
+                />
   </url><url>
-    <loc>https://claudiob25.github.io/categories/development/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
+    <loc>https://claudiob25.github.io/tags/jira/</loc>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/tags/jira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/tags/jira/"
+                />
   </url><url>
-    <loc>https://claudiob25.github.io/posts/hugo-coder-wiki/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
+    <loc>https://claudiob25.github.io/posts/</loc>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/posts/"
+                />
   </url><url>
-    <loc>https://claudiob25.github.io/tags/hugo/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/posts/hugo-coder-wiki/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/tags/themes/</loc>
-    <lastmod>2019-03-04T00:00:00+00:00</lastmod>
+    <loc>https://claudiob25.github.io/tags/</loc>
+    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/tags/"
+                />
   </url><url>
     <loc>https://claudiob25.github.io/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
@@ -214,6 +105,18 @@
                 href="https://claudiob25.github.io/authors/"
                 />
   </url><url>
+    <loc>https://claudiob25.github.io/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/categories/"
+                />
+  </url><url>
     <loc>https://claudiob25.github.io/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -236,6 +139,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://claudiob25.github.io/projects/"
+                />
+  </url><url>
+    <loc>https://claudiob25.github.io/series/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudiob25.github.io/it/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudiob25.github.io/series/"
                 />
   </url>
 </urlset>
