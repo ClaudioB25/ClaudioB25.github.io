@@ -181,6 +181,10 @@
       <span class="separator">•</span>
     <span class="tag">
       <a href="/it/tags/jira/">jira</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/it/tags/develop/">develop</a>
     </span></div>
 
         </div>
@@ -188,16 +192,51 @@
 
       <div>
         
-        <h2 id="introduzione">
+        <blockquote>
+<p>Giudica un uomo dalle sue domande, piuttosto che dalle sue risposte.
+— <!-- raw HTML omitted -->Voltaire<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
+</blockquote>
+<h2 id="introduzione">
   Introduzione
   <a class="heading-link" href="#introduzione">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p>Jira Software fa parte di una famiglia di prodotti studiati per aiutare qualsiasi tipo di team a gestire il lavoro. In origine, Jira era stato progettato come strumento per il monitoraggio di bug e ticket, ma oggi si è evoluto in un potente strumento di gestione del lavoro per tutti i casi d&rsquo;uso.
-In particolare permette ai team di pianificare, assegnare, monitorare, segnalare e gestire il lavoro con più facilità.</p>
-<p>In questo articolo vedremo come aggiungere un form custom, sviluppando un’applicazione con il la piattaforma di sviluppo Forge [https://developer.atlassian.com/platform/forge/].</p>
+<p><a href="https://www.atlassian.com/software/jira">Jira Software</a> permette ai team di pianificare, assegnare, monitorare e gestire il lavoro con più facilità.</p>
+<p>In origine, Jira era stato progettato come strumento per il monitoraggio di bug e ticket, ma oggi si è evoluto in un potente strumento di gestione del lavoro per tutti i casi d&rsquo;uso.</p>
+<blockquote>
+<p>Il nome del prodotto è un troncamento di Gojira, traslitterazione giapponese di <a href="https://it.wikipedia.org/wiki/Godzilla">Godzilla</a></p>
+</blockquote>
+<p>In questo articolo, creeremo un’applicazione con <a href="https://developer.atlassian.com/platform/forge/">la piattaforma di sviluppo Forge</a>, risolveremo qualche intoppo, e la pubblicheremo sullo <a href="https://marketplace.atlassian.com/addons/app/jira">store ufficiale</a>.</p>
+<!-- raw HTML omitted -->
+<p>La necessità è quella di far dialogare Jira con un server esterno, inviando a quest&rsquo;ultimo i dati di jira e alcuni campi personalizzati tramite chiamata <a href="https://www.ibm.com/it-it/cloud/learn/rest-apis">REST</a>.
+Per farlo, andremo ad aggiungere:</p>
+<ul>
+<li>una <strong>pagina di configurazione</strong> della nostra app in Jira, con i dati del server al quale connettersi</li>
+<li>una <strong>form personalizzata</strong> che, su conferma dell&rsquo;utente, invierà al nostro server i dati</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="preparazione">
+  Preparazione
+  <a class="heading-link" href="#preparazione">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><em><strong>NB: Il progetto è già scaricabile per intero da <a href="www.google.com">qui</a></strong></em></p>
+<ul>
+<li>installare node e la <a href="https://it.wikipedia.org/wiki/Interfaccia_a_riga_di_comando">cli</a> di forge. <a href="https://developer.atlassian.com/platform/forge/getting-started">GUIDA</a></li>
+<li>inizializzare dell&rsquo;app. <a href="https://developer.atlassian.com/platform/forge/build-a-hello-world-app-in-jira/">GUIDA</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Filosofo, scrittore e poeta francese, nonché uno degli autori più noti dell&rsquo;illuminismo. <a href="https://www.studenti.it/voltaire-vita-opere-filosofia.html">Approfondisci</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
       </div>
 
