@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>
+  Creare un plugin Jira con forge - Pt.1 · Claudio Bertani
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Bertani Claudio">
+<meta name="description" content="Creazione di una form personalizzata, mediante la piattaforma di sviluppo forge.">
+<meta name="keywords" content="blog,sviluppatore,mago">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Creare un plugin Jira con forge - Pt.1"/>
+<meta name="twitter:description" content="Creazione di una form personalizzata, mediante la piattaforma di sviluppo forge."/>
+
+<meta property="og:title" content="Creare un plugin Jira con forge - Pt.1" />
+<meta property="og:description" content="Creazione di una form personalizzata, mediante la piattaforma di sviluppo forge." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://claudiob25.github.io/it/posts/jira1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-18T00:00:00+00:00" /><meta property="og:site_name" content="Claudio Bertani" />
+
+
+
+
+
+<link rel="canonical" href="https://claudiob25.github.io/it/posts/jira1/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.7f9d180e3b3bebba9ba80d55eed1255c35e00764872854736d6ad7db38884ffc.css" integrity="sha256-f50YDjs767qbqA1V7tElXDXgB2SHKFRzbWrX2ziIT/w=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.216e36d3eaf6f4cdfd67dc1200c49a8169e6478102977b3e9ac51a064c57054c.css" integrity="sha256-IW420&#43;r29M39Z9wSAMSagWnmR4ECl3s&#43;msUaBkxXBUw=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/imgOnda.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/imgOnda.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.107.0">
+
+
+
+
+
+  </head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/it">
+      Claudio Bertani
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/it/about/">Chi sono</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/it/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/it/projects/">Progetti</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/it/contact/">Contattami</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://claudiob25.github.io/posts/jira1/">🇬🇧</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://claudiob25.github.io/it/posts/jira1/">
+              Creare un plugin Jira con forge - Pt.1
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2022-12-18T00:00:00Z">
+                dicembre 18, 2022
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              Lettura di un minuto
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/it/tags/forge/">forge</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/it/tags/jira/">jira</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/it/tags/develop/">develop</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <blockquote>
+<p>Giudica un uomo dalle sue domande, piuttosto che dalle sue risposte.
+— <!-- raw HTML omitted -->Voltaire<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
+</blockquote>
+<h2 id="introduzione">
+  Introduzione
+  <a class="heading-link" href="#introduzione">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><a href="https://www.atlassian.com/software/jira">Jira Software</a> permette ai team di pianificare, assegnare, monitorare e gestire il lavoro con più facilità.</p>
+<p>In origine, Jira era stato progettato come strumento per il monitoraggio di bug e ticket, ma oggi si è evoluto in un potente strumento di gestione del lavoro per tutti i casi d&rsquo;uso.</p>
+<blockquote>
+<p>Il nome del prodotto è un troncamento di Gojira, traslitterazione giapponese di <a href="https://it.wikipedia.org/wiki/Godzilla">Godzilla</a></p>
+</blockquote>
+<p>In questo articolo, creeremo un’applicazione con <a href="https://developer.atlassian.com/platform/forge/">la piattaforma di sviluppo Forge</a>, risolveremo qualche intoppo, e la pubblicheremo sullo <a href="https://marketplace.atlassian.com/addons/app/jira">store ufficiale</a>.</p>
+<!-- raw HTML omitted -->
+<p>La necessità è quella di far dialogare Jira con un server esterno, inviando a quest&rsquo;ultimo i dati di jira e alcuni campi personalizzati tramite chiamata <a href="https://www.ibm.com/it-it/cloud/learn/rest-apis">REST</a>.
+Per farlo, andremo ad aggiungere:</p>
+<ul>
+<li>una <strong>pagina di configurazione</strong> della nostra app in Jira, con i dati del server al quale connettersi</li>
+<li>una <strong>form personalizzata</strong> che, su conferma dell&rsquo;utente, invierà al nostro server i dati</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="preparazione">
+  Preparazione
+  <a class="heading-link" href="#preparazione">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><em><strong>NB: Il progetto è già scaricabile per intero da <a href="www.google.com">qui</a></strong></em></p>
+<ul>
+<li>installare node e la <a href="https://it.wikipedia.org/wiki/Interfaccia_a_riga_di_comando">cli</a> di forge. <a href="https://developer.atlassian.com/platform/forge/getting-started">GUIDA</a></li>
+<li>inizializzare dell&rsquo;app. <a href="https://developer.atlassian.com/platform/forge/build-a-hello-world-app-in-jira/">GUIDA</a></li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Filosofo, scrittore e poeta francese, nonché uno degli autori più noti dell&rsquo;illuminismo. <a href="https://www.studenti.it/voltaire-vita-opere-filosofia.html">Approfondisci</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      1998 -
+    
+    2022
+     Bertani Claudio 
+    ·
+    
+    Generato da <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.27afce394fb6284f521b3fbc9f6a8326342333c3092267f3944d770489876fed.js" integrity="sha256-J6/OOU&#43;2KE9SGz&#43;8n2qDJjQjM8MJImfzlE13BImHb&#43;0="></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

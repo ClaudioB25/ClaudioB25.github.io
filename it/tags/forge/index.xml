@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudiob25.github.io/it/tags/forge/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creare un plugin Jira con forge - Pt.1</title>
-      <link>https://claudiob25.github.io/it/posts/emoji-support/</link>
+      <link>https://claudiob25.github.io/it/posts/jira1/</link>
       <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://claudiob25.github.io/it/posts/emoji-support/</guid>
+      <guid>https://claudiob25.github.io/it/posts/jira1/</guid>
       <description>Giudica un uomo dalle sue domande, piuttosto che dalle sue risposte. — Voltaire1
 Introduzione Link to heading Jira Software permette ai team di pianificare, assegnare, monitorare e gestire il lavoro con più facilità.
 In origine, Jira era stato progettato come strumento per il monitoraggio di bug e ticket, ma oggi si è evoluto in un potente strumento di gestione del lavoro per tutti i casi d&amp;rsquo;uso.
