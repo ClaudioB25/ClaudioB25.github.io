@@ -2,7 +2,7 @@
 <html lang="it">
   <head>
     <title>
-  Creare un plugin Jira con forge - Pt.1 · Claudio Bertani
+  Creare un plugin Jira con Forge · Claudio25
 </title>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,21 +16,21 @@
 <meta name="keywords" content="blog,sviluppatore,mago">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Creare un plugin Jira con forge - Pt.1"/>
+<meta name="twitter:title" content="Creare un plugin Jira con Forge"/>
 <meta name="twitter:description" content="Creazione di una form personalizzata, mediante la piattaforma di sviluppo forge."/>
 
-<meta property="og:title" content="Creare un plugin Jira con forge - Pt.1" />
+<meta property="og:title" content="Creare un plugin Jira con Forge" />
 <meta property="og:description" content="Creazione di una form personalizzata, mediante la piattaforma di sviluppo forge." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://claudiob25.github.io/it/posts/jira1/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-12-18T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-12-18T00:00:00+00:00" /><meta property="og:site_name" content="Claudio Bertani" />
+<meta property="og:url" content="https://claudio25.com/it/posts/jira1/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-12-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-19T00:00:00+00:00" /><meta property="og:site_name" content="Claudio25" />
 
 
 
 
 
-<link rel="canonical" href="https://claudiob25.github.io/it/posts/jira1/">
+<link rel="canonical" href="https://claudio25.com/it/posts/jira1/">
 
 
 <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
@@ -83,7 +83,7 @@
 
 
 
-<body class="preload-transitions colorscheme-dark">
+<body class="preload-transitions colorscheme-auto">
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
@@ -96,7 +96,7 @@
     <nav class="navigation">
   <section class="container">
     <a class="navigation-title" href="/it">
-      Claudio Bertani
+      Claudio25
     </a>
     
       <input type="checkbox" id="menu-toggle" />
@@ -128,6 +128,8 @@
           
           
             
+          
+            
               
                 <li class="navigation-item menu-separator">
                   <span>|</span>
@@ -135,7 +137,7 @@
                 
               
               <li class="navigation-item">
-                <a href="https://claudiob25.github.io/posts/jira1/">🇬🇧</a>
+                <a href="https://claudio25.com/">🇬🇧</a>
               </li>
             
           
@@ -153,8 +155,8 @@
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="https://claudiob25.github.io/it/posts/jira1/">
-              Creare un plugin Jira con forge - Pt.1
+            <a class="title-link" href="https://claudio25.com/it/posts/jira1/">
+              Creare un plugin Jira con Forge
             </a>
           </h1>
         </div>
@@ -162,13 +164,13 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2022-12-18T00:00:00Z">
-                dicembre 18, 2022
+              <time datetime="2022-12-19T00:00:00Z">
+                dicembre 19, 2022
               </time>
             </span>
             <span class="reading-time">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              Lettura di un minuto
+              7 minuti di lettura
             </span>
           </div>
           
@@ -196,38 +198,352 @@
 <p>Giudica un uomo dalle sue domande, piuttosto che dalle sue risposte.
 — <!-- raw HTML omitted -->Voltaire<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup><!-- raw HTML omitted --></p>
 </blockquote>
-<h2 id="introduzione">
+<h1 id="introduzione">
   Introduzione
   <a class="heading-link" href="#introduzione">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
-</h2>
+</h1>
 <p><a href="https://www.atlassian.com/software/jira">Jira Software</a> permette ai team di pianificare, assegnare, monitorare e gestire il lavoro con più facilità.</p>
-<p>In origine, Jira era stato progettato come strumento per il monitoraggio di bug e ticket, ma oggi si è evoluto in un potente strumento di gestione del lavoro per tutti i casi d&rsquo;uso.</p>
-<blockquote>
-<p>Il nome del prodotto è un troncamento di Gojira, traslitterazione giapponese di <a href="https://it.wikipedia.org/wiki/Godzilla">Godzilla</a></p>
-</blockquote>
-<p>In questo articolo, creeremo un’applicazione con <a href="https://developer.atlassian.com/platform/forge/">la piattaforma di sviluppo Forge</a>, risolveremo qualche intoppo, e la pubblicheremo sullo <a href="https://marketplace.atlassian.com/addons/app/jira">store ufficiale</a>.</p>
-<!-- raw HTML omitted -->
-<p>La necessità è quella di far dialogare Jira con un server esterno, inviando a quest&rsquo;ultimo i dati di jira e alcuni campi personalizzati tramite chiamata <a href="https://www.ibm.com/it-it/cloud/learn/rest-apis">REST</a>.
-Per farlo, andremo ad aggiungere:</p>
+<p>Nasce nel 2002 inizialmente per il solo monitoraggio di bug e ticket, è scritto in Java, e il nome è un troncamento di Gojira, traslitterazione giapponese di <a href="https://it.wikipedia.org/wiki/Godzilla">Godzilla</a></p>
+<p>In questo articolo, creeremo un’applicazione con <a href="https://developer.atlassian.com/platform/forge/">la piattaforma di sviluppo Forge</a>, per la raccolta e l&rsquo;invio di dati ad un server esterno, tramite chiamata <a href="https://www.ibm.com/it-it/cloud/learn/rest-apis">REST</a>.</p>
+<p>Il nostro plugin conterrà:</p>
 <ul>
-<li>una <strong>pagina di configurazione</strong> della nostra app in Jira, con i dati del server al quale connettersi</li>
-<li>una <strong>form personalizzata</strong> che, su conferma dell&rsquo;utente, invierà al nostro server i dati</li>
+<li>una <strong>pagina di configurazione</strong> con i dati del server esterno</li>
+<li>funzioni che prelevano i dati da jira</li>
+<li>una <strong>form di dati aggiuntiva</strong> invio dei dati al server esterno</li>
 </ul>
-<!-- raw HTML omitted -->
-<h2 id="preparazione">
-  Preparazione
-  <a class="heading-link" href="#preparazione">
+<div class="notice tip">
+  <div class="notice-title">
+    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>Tip
+  </div>
+  <div class="notice-content"><p>Il progetto è scaricabile per intero da <a href="www.google.com">qui</a></p>
+<ul>
+<li>Ci sono <a href="https://github.com/atlassian/github-for-jira#install-from-jira-cloud-site">vari modi</a> per installare le app Jira sul tuo ambiente.</li>
+<li>Se preferisci scaricare il codice e pubblicare l&rsquo;app dal tuo ambiente usa
+<ul>
+<li><code>npm install</code> <code>forge register</code> <code>forge deploy</code></li>
+</ul>
+</li>
+<li>Puoi monitorare le tue app <em><strong>e i logs</strong></em> nella <a href="https://developer.atlassian.com/console/myapps/">sezione developer</a>, accedi con il tuo utente, per sapere qual&rsquo;è digita <code>forge whoami</code>
+<ul>
+<li>I log delle applicazioni Jira, non saranno mai visibili nella console del browser.</li>
+</ul>
+</li>
+</ul></div>
+</div>
+
+<h1 id="inizializzazione-app">
+  Inizializzazione app
+  <a class="heading-link" href="#inizializzazione-app">
     <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
-</h2>
-<p><em><strong>NB: Il progetto è già scaricabile per intero da <a href="www.google.com">qui</a></strong></em></p>
+</h1>
 <ul>
-<li>installare node e la <a href="https://it.wikipedia.org/wiki/Interfaccia_a_riga_di_comando">cli</a> di forge. <a href="https://developer.atlassian.com/platform/forge/getting-started">GUIDA</a></li>
-<li>inizializzare dell&rsquo;app. <a href="https://developer.atlassian.com/platform/forge/build-a-hello-world-app-in-jira/">GUIDA</a></li>
+<li>installa node e la <a href="https://it.wikipedia.org/wiki/Interfaccia_a_riga_di_comando">cli</a> di forge. <a href="https://developer.atlassian.com/platform/forge/getting-started">GUIDA</a></li>
+<li>inizializza l&rsquo;app. <a href="https://developer.atlassian.com/platform/forge/build-a-hello-world-app-in-jira/">GUIDA</a>
+<ul>
+<li><code>forge create</code> scegliamo il template <em><strong>jira-admin-page-ui-kit</strong></em></li>
+<li>questa scelta non è vincolante, è solo la struttura files di partenza</li>
+</ul>
+</li>
+<li>editiamo il file manifest.yml per aggiornare il nome dell&rsquo;app e l&rsquo;icona</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#ff79c6">modules</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">jira:adminPage</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">key</span>: testplugincb-hello-world-admin-page
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">function</span>: main
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">title</span>: Test Plugin CB
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">label</span>: Descrizione del tuo plugin
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">icon</span>: https://claudiob25.github.io/images/imgOnda.png
+</span></span></code></pre></div><ul>
+<li>Installiamo con <code>forge deploy</code> e <code>forge install</code> come descritto <a href="https://developer.atlassian.com/platform/forge/build-a-hello-world-app-in-jira/#install-your-app">QUI</a></li>
+<li>Verifichiamo il risultato, dal sito, con la sezione &ldquo;app&rdquo; e poi &ldquo;gestisci app&rdquo;</li>
+</ul>
+<h1 id="pagina-di-configurazione">
+  Pagina di configurazione
+  <a class="heading-link" href="#pagina-di-configurazione">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Creiamo subito una pagina per salvare le credenziali del server esterno, accessibile all&rsquo;amministratore.</p>
+<p>Ho seguito l&rsquo;esempio ufficiale <a href="https://developer.atlassian.com/platform/forge/example-apps-jira/#issue-health-app">Issue Health</a>, ecco il file js commentato</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff79c6">import</span> ForgeUI, { render, AdminPage, Fragment, Form, useState, useEffect, SectionMessage, TextField } from <span style="color:#f1fa8c">&#39;@forge/ui&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> { storage } from <span style="color:#f1fa8c">&#39;@forge/api&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">const</span> App <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">const</span> STORAGE_KEY_PREFIX <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;CB_CONFIGURATION_DATA&#34;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// inizializzo le variabili
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">const</span> [projectConfigState, setProjectConfigState] <span style="color:#ff79c6">=</span> useState(<span style="color:#ff79c6">undefined</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">const</span> [isConfigSubmitted, setConfigSubmitted] <span style="color:#ff79c6">=</span> useState(<span style="color:#ff79c6">false</span>);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// questa funzione viene lanciata appena la pagina viene caricata, ed ogni volta che il valore del secondo parametro &#34;cambia&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#6272a4">// lo scopo è quello di caricare i dati salvati nel localStorage, se ci sono
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    useEffect(<span style="color:#ff79c6">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">const</span> storageData <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> storage.get(<span style="color:#f1fa8c">`</span><span style="color:#f1fa8c">${</span>STORAGE_KEY_PREFIX<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>);
+</span></span><span style="display:flex;"><span>        setProjectConfigState(storageData);
+</span></span><span style="display:flex;"><span>    }, [projectConfigState]);
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// sul submit della form, salviamo i dati nel localStorage del nostro plugin
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">const</span> onProjectConfigSubmit <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">async</span> (serverConfig) =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">await</span> storage.set(<span style="color:#f1fa8c">`</span><span style="color:#f1fa8c">${</span>STORAGE_KEY_PREFIX<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>, serverConfig);
+</span></span><span style="display:flex;"><span>        setProjectConfigState(serverConfig);
+</span></span><span style="display:flex;"><span>        setConfigSubmitted(<span style="color:#ff79c6">true</span>);
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// creazione grafica della form di inserimento e visualizzazione dati
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">return</span> (
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;</span>Fragment<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>            {isConfigSubmitted <span style="color:#ff79c6">&amp;&amp;</span> <span style="color:#ff79c6">&lt;</span>SectionMessage title<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Configurazione Salvata&#34;</span> appearance<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;confirmation&#34;</span><span style="color:#ff79c6">/&gt;</span>}
+</span></span><span style="display:flex;"><span>            {<span style="color:#ff79c6">&lt;</span>Form onSubmit<span style="color:#ff79c6">=</span>{onProjectConfigSubmit} submitButtonText<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Salva&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>TextField label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Server URL&#34;</span> name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_CONF_SERVERURL&#34;</span> defaultValue<span style="color:#ff79c6">=</span>{projectConfigState<span style="color:#ff79c6">?</span>.CB_CONF_SERVERURL} <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>TextField label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;WebApi Username&#34;</span> name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_CONF_USERNAME&#34;</span> defaultValue<span style="color:#ff79c6">=</span>{projectConfigState<span style="color:#ff79c6">?</span>.CB_CONF_USERNAME} <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>TextField label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;WebApi Password&#34;</span> name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_CONF_PASSWORD&#34;</span> type<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;password&#39;</span> defaultValue<span style="color:#ff79c6">=</span>{projectConfigState<span style="color:#ff79c6">?</span>.CB_CONF_PASSWORD} <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&lt;</span>/Form&gt;}
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;</span>/Fragment&gt;
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">export</span> <span style="color:#ff79c6">const</span> run <span style="color:#ff79c6">=</span> render(
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span>AdminPage<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#ff79c6">&lt;</span>App <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span>/AdminPage&gt;
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></div><p>E dopo un <code>forge deploy</code> &hellip;</p>
+<p><div class="notice error">
+  <div class="notice-title">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>Error
+  </div>
+  <div class="notice-content">Using the Forge Storage API requires the &ldquo;storage:app&rdquo; scope  permission-scope-require</div>
+</div>
+
+Anzichè aggiungere manualmente in <code>manifest.yml</code> le scope permission, ___lanciamo <code>forge lint --fix</code> per assegnare i permessi in automatico.</p>
+<p><div class="notice error">
+  <div class="notice-title">
+    <i class="fa fa-times-circle" aria-hidden="true"></i>Error
+  </div>
+  <div class="notice-content">Error: Can&rsquo;t resolve &lsquo;@forge/api&rsquo;</div>
+</div>
+
+Non abbiamo listato il pacchetto nel <code>package.json</code> quindi uso <code>npm install @forge/api</code>, altrimenti sarebbe bastato <code>npm install</code></p>
+<p>Siccome abbiamo una nuova scope, oltre a lanciare <code>forge deploy</code> dobbiamo eseguire anche <code>forge install --upgrade</code></p>
+<p>Ecco il risultato!</p>
+<p><img src="/images/jira001.PNG" alt="pagina configurazione plugin jira"></p>
+<h1 id="creazione-issue-panel-con-form-personalizzato">
+  Creazione Issue Panel con form personalizzato
+  <a class="heading-link" href="#creazione-issue-panel-con-form-personalizzato">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Ora vogliamo aggiungere un nuovo pannello per ogni attività, quindi andiamo a cercare nella <a href="https://developer.atlassian.com/platform/forge/ui-kit-components/jira/">lista dei componenti</a>.
+Quello che fa al caso nostro è <a href="https://developer.atlassian.com/platform/forge/ui-kit-components/jira/issue-panel/">Issue Panel</a>.</p>
+<p>Innanzitutto aggiungiamo il nuovo modulo all&rsquo;interno del <code>manifest.yml</code>, la mia sezione modules conterrà:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span>  <span style="color:#ff79c6">jira:adminPage</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">key</span>: testplugincb-hello-world-admin-page
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">function</span>: main
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">title</span>: Test Plugin CB
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">label</span>: Descrizione del tuo plugin
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">icon</span>: https://claudiob25.github.io/images/imgOnda.png
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">jira:issuePanel</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">key</span>: issue-panel
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">function</span>: panel
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">title</span>: Crea Rapportino CB
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">label</span>: Form Data CB
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">icon</span>: https://claudiob25.github.io/images/imgOnda.png
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">description</span>: Descrizione operazioni svolte dal plugin
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">function</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">key</span>: main
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">handler</span>: index.run
+</span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">key</span>: panel
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">handler</span>: panel.run
+</span></span></code></pre></div><p>Procedo poi a creare il file <code>panel.js</code> che contiene questo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff79c6">import</span> ForgeUI, { render, Fragment, Text, IssuePanel, Table, Cell, useEffect, Form, SectionMessage, DatePicker, Select, Option, useState, Toggle, TextArea, useProductContext, Button, TextField, Row } from <span style="color:#f1fa8c">&#39;@forge/ui&#39;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> api, { storage, route } from <span style="color:#f1fa8c">&#34;@forge/api&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">const</span> App <span style="color:#ff79c6">=</span> () =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> STORAGE_KEY_PREFIX <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;CB_CONFIGURATION_DATA&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// useState is a UI kit hook we use to manage the form data in local state
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  <span style="color:#ff79c6">const</span> [formState, setFormState] <span style="color:#ff79c6">=</span> useState();
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> [jiraUser, setJiraUser] <span style="color:#ff79c6">=</span> useState();
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> [issueData, setIssueData] <span style="color:#ff79c6">=</span> useState();
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> [storageData] <span style="color:#ff79c6">=</span> useState(<span style="color:#ff79c6">async</span> () =&gt; <span style="color:#ff79c6">await</span> storage.get(<span style="color:#f1fa8c">`</span><span style="color:#f1fa8c">${</span>STORAGE_KEY_PREFIX<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>));
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> [trasfertaVisible, setTrasfertaVisible] <span style="color:#ff79c6">=</span> useState(<span style="color:#ff79c6">false</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> [errorString, setErrorString] <span style="color:#ff79c6">=</span> useState();
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> [successString, setSuccessString] <span style="color:#ff79c6">=</span> useState();
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> { platformContext<span style="color:#ff79c6">:</span> { issueKey }, accountId } <span style="color:#ff79c6">=</span> useProductContext(); <span style="color:#6272a4">// Get the context issue key
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> selectTipoIntervento <span style="color:#ff79c6">=</span> [
+</span></span><span style="display:flex;"><span>    { label<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Esterno&#34;</span>, value<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;esterno&#34;</span>, defaultSelected<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span> },
+</span></span><span style="display:flex;"><span>    { label<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Interno&#34;</span>, value<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;interno&#34;</span>, defaultSelected<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">true</span> },
+</span></span><span style="display:flex;"><span>    { label<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;Teleassistenza&#34;</span>, value<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#34;teleassistenza&#34;</span>, defaultSelected<span style="color:#ff79c6">:</span> <span style="color:#ff79c6">false</span> }
+</span></span><span style="display:flex;"><span>  ];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// On start i collect logged jira user data
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  useEffect(<span style="color:#ff79c6">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">const</span> response <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> api.asUser().requestJira(route<span style="color:#f1fa8c">`/rest/api/3/myself`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">await</span> checkResponse(<span style="color:#f1fa8c">&#39;Jira API&#39;</span>, response);
+</span></span><span style="display:flex;"><span>    setJiraUser(<span style="color:#ff79c6">await</span> response.json()); <span style="color:#6272a4">// se setto solamente una variabile, essa non viene aggiornata in grafica
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  }, []);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// On start, i collect context data (issue name and description, project name)
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  useEffect(<span style="color:#ff79c6">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">const</span> response <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> api.asApp().requestJira(route<span style="color:#f1fa8c">`/rest/api/2/issue/</span><span style="color:#f1fa8c">${</span>issueKey<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">await</span> checkResponse(<span style="color:#f1fa8c">&#39;Jira API&#39;</span>, response);
+</span></span><span style="display:flex;"><span>    setIssueData((<span style="color:#ff79c6">await</span> response.json()).fields);
+</span></span><span style="display:flex;"><span>  }, []); <span style="color:#6272a4">// se metti qualcosa nell array in dipendenza, appena questa cambia il suo valore, questa function viene rieseguita
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// Jira Plugin is published on AWS, i needed to know the public ip of published plugin
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  useEffect(<span style="color:#ff79c6">async</span> () =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">const</span> translateRespons1e <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> api.fetch(<span style="color:#f1fa8c">&#34;https://api.db-ip.com/v2/free/self&#34;</span>,
+</span></span><span style="display:flex;"><span>      { method<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;GET&#39;</span>}
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">await</span> checkResponse(<span style="color:#f1fa8c">&#39;TEST API&#39;</span>, translateRespons1e);
+</span></span><span style="display:flex;"><span>  }, []);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">const</span> showHideTrasferta <span style="color:#ff79c6">=</span> () =&gt; { 
+</span></span><span style="display:flex;"><span>    setTrasfertaVisible(<span style="color:#ff79c6">!</span>trasfertaVisible);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// sulla submit del form, voglio creare anche un registro di lavoro Jira, e aggiorna il tracciamento temporale del progetto
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  <span style="color:#ff79c6">const</span> createWorkLog <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">async</span> (secondiWorkLog, dataInizio) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#8be9fd;font-style:italic">var</span> bodyData <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">`{&#34;timeSpentSeconds&#34;: </span><span style="color:#f1fa8c">${</span>secondiWorkLog<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">, &#34;started&#34;: &#34;</span><span style="color:#f1fa8c">${</span>dataInizio <span style="color:#ff79c6">+</span> <span style="color:#f1fa8c">&#34;T03:00:00.000+0000&#34;</span><span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">&#34;}`</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">const</span> response <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> api.asUser().requestJira(route<span style="color:#f1fa8c">`/rest/api/2/issue/</span><span style="color:#f1fa8c">${</span>issueKey<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">/worklog`</span>, {
+</span></span><span style="display:flex;"><span>      method<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;POST&#39;</span>, headers<span style="color:#ff79c6">:</span> { <span style="color:#f1fa8c">&#39;Accept&#39;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;application/json&#39;</span>, <span style="color:#f1fa8c">&#39;Content-Type&#39;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;application/json&#39;</span> }, body<span style="color:#ff79c6">:</span> bodyData
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">await</span> checkResponse(<span style="color:#f1fa8c">&#39;CB API&#39;</span>, response);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#6272a4">// Handles form submission, which is a good place to call APIs, or to set component state...
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>  <span style="color:#ff79c6">const</span> onSubmit <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">async</span> (formData) =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// authenticazione e successivamente invio dati al nostro server
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">const</span> translateResponse <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">await</span> api.fetch(storageData.CB_CONF_SERVERURL,
+</span></span><span style="display:flex;"><span>      { method<span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;POST&#39;</span>,  headers<span style="color:#ff79c6">:</span> {<span style="color:#f1fa8c">&#39;Content-Type&#39;</span><span style="color:#ff79c6">:</span> <span style="color:#f1fa8c">&#39;application/json; charset=UTF-8&#39;</span>},
+</span></span><span style="display:flex;"><span>        body<span style="color:#ff79c6">:</span> JSON.stringify({
+</span></span><span style="display:flex;"><span>        <span style="color:#f1fa8c">&#34;username&#34;</span><span style="color:#ff79c6">:</span> storageData.CB_CONF_USERNAME,
+</span></span><span style="display:flex;"><span>        <span style="color:#f1fa8c">&#34;password&#34;</span><span style="color:#ff79c6">:</span> storageData.CB_CONF_PASSWORD,
+</span></span><span style="display:flex;"><span>      })
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">await</span> checkResponse(<span style="color:#f1fa8c">&#39;CB API&#39;</span>, translateResponse);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    setErrorString(<span style="color:#ff79c6">undefined</span>);
+</span></span><span style="display:flex;"><span>    setSuccessString(<span style="color:#ff79c6">undefined</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">/** formData: { username: &#39;Username&#39;, products: [&#39;jira&#39;] }*/</span>
+</span></span><span style="display:flex;"><span>    formData.CB_commessa <span style="color:#ff79c6">=</span> issueData<span style="color:#ff79c6">?</span>.project<span style="color:#ff79c6">?</span>.name.split(<span style="color:#f1fa8c">&#39;[&#39;</span>).pop().split(<span style="color:#f1fa8c">&#39;]&#39;</span>)[<span style="color:#bd93f9">0</span>];
+</span></span><span style="display:flex;"><span>    formData.CB_oggetto <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#34;Rapportino d&#39;intervento&#34;</span>;
+</span></span><span style="display:flex;"><span>    formData.CB_user <span style="color:#ff79c6">=</span> jiraUser<span style="color:#ff79c6">?</span>.emailAddress;
+</span></span><span style="display:flex;"><span>    setFormState(formData); <span style="color:#6272a4">// aggiorno la variabile formData, con i dati inseriti dall utente nel form
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    <span style="color:#ff79c6">const</span> secondiWorkLog <span style="color:#ff79c6">=</span> formData.CB_workTime <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">60</span> <span style="color:#ff79c6">*</span> <span style="color:#bd93f9">60</span>;
+</span></span><span style="display:flex;"><span>    createWorkLog(secondiWorkLog, formData.CB_executionDate);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#6272a4">// post dati server... se ok:
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"></span>    setSuccessString(<span style="color:#f1fa8c">&#34;Creazione rapportino eseguita.&#34;</span>);
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">return</span> (
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span>Fragment<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">&lt;</span>Form onSubmit<span style="color:#ff79c6">=</span>{onSubmit} onFinish<span style="color:#ff79c6">=</span>{(values) =&gt; <span style="color:#ff79c6">this</span>.handleFormSubmit(values)} submitButtonText<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Crea Rapportino&#34;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>            {<span style="color:#ff79c6">&lt;</span>Table<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>Row<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>Cell<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&lt;</span>DatePicker name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_executionDate&#34;</span> label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Data Intervento&#34;</span> defaultValue<span style="color:#ff79c6">=</span>{<span style="color:#ff79c6">new</span> <span style="color:#8be9fd;font-style:italic">Date</span>().toLocaleDateString(<span style="color:#f1fa8c">&#39;en-CA&#39;</span>)} isRequired <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>/Cell&gt;
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>Cell<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&lt;</span>TextArea name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_description&#34;</span> label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Descrizione attività&#34;</span> isRequired defaultValue<span style="color:#ff79c6">=</span>{issueData<span style="color:#ff79c6">?</span>.description}<span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>/Cell&gt;
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>/Row&gt;
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>Row<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>Cell<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&lt;</span>TextField name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_workTime&#34;</span> label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Tempo Impiegato in ore&#34;</span> type<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;number&#34;</span> isRequired <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>/Cell&gt;
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>Cell<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&lt;</span>Toggle name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_bpInAffiancamento&#34;</span> label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;BP in affiancamento&#34;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>/Cell&gt;
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>/Row&gt;
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>Row<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>Cell<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&lt;</span>Select label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Tipo Intervento&#34;</span> name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_tipoIntervento&#34;</span> isRequired<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                      {selectTipoIntervento.map(el =&gt; <span style="color:#ff79c6">&lt;</span>Option label<span style="color:#ff79c6">=</span>{el.label} value<span style="color:#ff79c6">=</span>{el.value} defaultSelected<span style="color:#ff79c6">=</span>{el.defaultSelected}<span style="color:#ff79c6">&gt;&lt;</span>/Option&gt;)}
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&lt;</span>/Select&gt;
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>/Cell&gt;
+</span></span><span style="display:flex;"><span>                 
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>Cell<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                    {  <span style="color:#ff79c6">!</span>trasfertaVisible <span style="color:#ff79c6">?</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#ff79c6">&lt;</span>Button onClick<span style="color:#ff79c6">=</span>{showHideTrasferta} text<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Aggiungi trasferta&#39;</span><span style="color:#ff79c6">&gt;&lt;</span>/Button&gt; :
+</span></span><span style="display:flex;"><span>                      <span style="color:#ff79c6">&lt;</span>Button onClick<span style="color:#ff79c6">=</span>{showHideTrasferta} text<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Rimuovi trasferta&#39;</span><span style="color:#ff79c6">&gt;&lt;</span>/Button&gt;}
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>/Cell&gt;
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>/Row&gt;
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>Row<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>Cell<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                  {  trasfertaVisible <span style="color:#ff79c6">?</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&lt;</span>TextField name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_oreViaggio&#34;</span> label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;Ore viaggio&#34;</span> type<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;number&#34;</span> isRequired <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>}
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>/Cell&gt;
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>Cell<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>                  {  trasfertaVisible <span style="color:#ff79c6">?</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">&lt;</span>TextField name<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;CB_kmtotali&#34;</span> label<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#34;KM andata e ritorno&#34;</span> placeholder<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;Km percorsi andata e ritorno&#39;</span> isRequired type<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;number&#39;</span> <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>}
+</span></span><span style="display:flex;"><span>                  <span style="color:#ff79c6">&lt;</span>/Cell&gt;
+</span></span><span style="display:flex;"><span>                <span style="color:#ff79c6">&lt;</span>/Row&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&lt;</span>/Table&gt;
+</span></span><span style="display:flex;"><span>          }
+</span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">&lt;</span>/Form&gt;
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        successString <span style="color:#ff79c6">&amp;&amp;</span> successString <span style="color:#ff79c6">!=</span> <span style="color:#f1fa8c">&#34;&#34;</span> <span style="color:#ff79c6">?</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#ff79c6">&lt;</span>SectionMessage appearance<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;confirmation&#39;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&lt;</span>Text<span style="color:#ff79c6">&gt;</span>{successString}<span style="color:#ff79c6">&lt;</span>/Text&gt;
+</span></span><span style="display:flex;"><span>          <span style="color:#ff79c6">&lt;</span>/SectionMessage&gt;
+</span></span><span style="display:flex;"><span>          <span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>      {
+</span></span><span style="display:flex;"><span>        errorString <span style="color:#ff79c6">&amp;&amp;</span> errorString <span style="color:#ff79c6">!=</span> <span style="color:#f1fa8c">&#34;&#34;</span> <span style="color:#ff79c6">?</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#ff79c6">&lt;</span>SectionMessage appearance<span style="color:#ff79c6">=</span><span style="color:#f1fa8c">&#39;error&#39;</span><span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#ff79c6">&lt;</span>Text<span style="color:#ff79c6">&gt;</span>{errorString}<span style="color:#ff79c6">&lt;</span>/Text&gt;
+</span></span><span style="display:flex;"><span>          <span style="color:#ff79c6">&lt;</span>/SectionMessage&gt;
+</span></span><span style="display:flex;"><span>          <span style="color:#ff79c6">:</span> <span style="color:#ff79c6">null</span>
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span>/Fragment&gt;
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff79c6">export</span> <span style="color:#ff79c6">const</span> run <span style="color:#ff79c6">=</span> render(
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;</span>IssuePanel<span style="color:#ff79c6">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">&lt;</span>App <span style="color:#ff79c6">/&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">&lt;</span>/IssuePanel&gt;
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#6272a4">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"> * Checks if a response was successful, and log and throw an error if not.
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"> * Also logs the response body if the DEBUG_LOGGING env variable is set.
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"> * @param apiName a human readable name for the API that returned the response object
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"> * @param response a response object returned from `api.fetch()`, `requestJira()`, or similar
+</span></span></span><span style="display:flex;"><span><span style="color:#6272a4"> */</span>
+</span></span><span style="display:flex;"><span> <span style="color:#ff79c6">async</span> <span style="color:#8be9fd;font-style:italic">function</span> checkResponse(apiName, response) {
+</span></span><span style="display:flex;"><span>  <span style="color:#ff79c6">if</span> (<span style="color:#ff79c6">!</span>response.ok) {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">const</span> message <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">`Error from </span><span style="color:#f1fa8c">${</span>apiName<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">: </span><span style="color:#f1fa8c">${</span>response.status<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c"> </span><span style="color:#f1fa8c">${</span><span style="color:#ff79c6">await</span> response.text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>;
+</span></span><span style="display:flex;"><span>    console.error(JSON.stringify(response));
+</span></span><span style="display:flex;"><span>    <span style="color:#ff79c6">throw</span> <span style="color:#ff79c6">new</span> <span style="color:#8be9fd;font-style:italic">Error</span>(message);
+</span></span><span style="display:flex;"><span>  } <span style="color:#ff79c6">else</span> <span style="color:#ff79c6">if</span> (<span style="color:#ff79c6">true</span>) {
+</span></span><span style="display:flex;"><span>    console.warn(<span style="color:#f1fa8c">`Response from </span><span style="color:#f1fa8c">${</span>apiName<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">: </span><span style="color:#f1fa8c">${</span><span style="color:#ff79c6">await</span> response.text()<span style="color:#f1fa8c">}</span><span style="color:#f1fa8c">`</span>);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Con questo abbiamo concluso la nostra app, successivamente vedremo come pubblicarla sullo <a href="https://marketplace.atlassian.com/addons/app/jira">store ufficiale</a></p>
+<p>Se hai trovato utile questo articolo, o se hai idee per il prossimo, contattami!</p>
+<h1 id="link-utili">
+  Link Utili
+  <a class="heading-link" href="#link-utili">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<ul>
+<li><a href="https://developer.atlassian.com/platform/forge/ui-kit-components/jira/">Jira UI Kit Component</a></li>
+<li><a href="https://developer.atlassian.com/platform/forge/example-apps-jira/">Esempi app Jira</a></li>
+<li><a href="https://developer.atlassian.com/platform/forge/automate-jira-using-triggers/">Automate Jira using triggers</a></li>
 </ul>
 <div class="footnotes" role="doc-endnotes">
 <hr>

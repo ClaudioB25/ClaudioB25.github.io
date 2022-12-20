@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Claudio Bertani</title>
-    <link>https://claudiob25.github.io/it/posts/</link>
-    <description>Recent content in Posts on Claudio Bertani</description>
+    <title>Posts on Claudio25</title>
+    <link>https://claudio25.com/it/posts/</link>
+    <description>Recent content in Posts on Claudio25</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudiob25.github.io/it/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudio25.com/it/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Creare un plugin Jira con forge - Pt.1</title>
-      <link>https://claudiob25.github.io/it/posts/jira1/</link>
-      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
+      <title>Creare un plugin Jira con Forge</title>
+      <link>https://claudio25.com/it/posts/jira1/</link>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://claudiob25.github.io/it/posts/jira1/</guid>
+      <guid>https://claudio25.com/it/posts/jira1/</guid>
       <description>Giudica un uomo dalle sue domande, piuttosto che dalle sue risposte. — Voltaire1
 Introduzione Link to heading Jira Software permette ai team di pianificare, assegnare, monitorare e gestire il lavoro con più facilità.
-In origine, Jira era stato progettato come strumento per il monitoraggio di bug e ticket, ma oggi si è evoluto in un potente strumento di gestione del lavoro per tutti i casi d&amp;rsquo;uso.
-Il nome del prodotto è un troncamento di Gojira, traslitterazione giapponese di Godzilla</description>
+Nasce nel 2002 inizialmente per il solo monitoraggio di bug e ticket, è scritto in Java, e il nome è un troncamento di Gojira, traslitterazione giapponese di Godzilla
+In questo articolo, creeremo un’applicazione con la piattaforma di sviluppo Forge, per la raccolta e l&amp;rsquo;invio di dati ad un server esterno, tramite chiamata REST.</description>
     </item>
     
   </channel>

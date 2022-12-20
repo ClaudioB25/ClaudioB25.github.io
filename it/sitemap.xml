@@ -2,158 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://claudiob25.github.io/it/</loc>
-    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+    <loc>https://claudio25.com/it/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://claudiob25.github.io/"
+                href="https://claudio25.com/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://claudiob25.github.io/it/"
+                href="https://claudio25.com/it/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/it/posts/jira1/</loc>
-    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
+    <loc>https://claudio25.com/it/posts/jira1/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://claudio25.com/it/tags/develop/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://claudio25.com/it/tags/forge/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://claudio25.com/it/tags/jira/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://claudio25.com/it/posts/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://claudio25.com/it/tags/</loc>
+    <lastmod>2022-12-19T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://claudiob25.github.io/posts/jira1/"
+                href="https://claudio25.com/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://claudiob25.github.io/it/posts/jira1/"
+                href="https://claudio25.com/it/tags/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/it/tags/develop/</loc>
-    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://claudiob25.github.io/it/tags/forge/</loc>
-    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/tags/forge/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/tags/forge/"
-                />
-  </url><url>
-    <loc>https://claudiob25.github.io/it/tags/jira/</loc>
-    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/tags/jira/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/tags/jira/"
-                />
-  </url><url>
-    <loc>https://claudiob25.github.io/it/posts/</loc>
-    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/posts/"
-                />
-  </url><url>
-    <loc>https://claudiob25.github.io/it/tags/</loc>
-    <lastmod>2022-12-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudiob25.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudiob25.github.io/it/tags/"
-                />
-  </url><url>
-    <loc>https://claudiob25.github.io/it/about/</loc>
+    <loc>https://claudio25.com/it/about/</loc>
     <lastmod>2019-02-28T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://claudiob25.github.io/about/"
+                href="https://claudio25.com/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://claudiob25.github.io/it/about/"
+                href="https://claudio25.com/it/about/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/it/authors/</loc>
+    <loc>https://claudio25.com/it/authors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://claudiob25.github.io/authors/"
+                href="https://claudio25.com/authors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://claudiob25.github.io/it/authors/"
+                href="https://claudio25.com/it/authors/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/it/categories/</loc>
+    <loc>https://claudio25.com/it/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://claudiob25.github.io/categories/"
+                href="https://claudio25.com/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://claudiob25.github.io/it/categories/"
+                href="https://claudio25.com/it/categories/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/it/contact/</loc>
+    <loc>https://claudio25.com/it/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://claudiob25.github.io/contact/"
+                href="https://claudio25.com/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://claudiob25.github.io/it/contact/"
+                href="https://claudio25.com/it/contact/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/it/projects/</loc>
+    <loc>https://claudio25.com/it/projects/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://claudiob25.github.io/projects/"
+                href="https://claudio25.com/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://claudiob25.github.io/it/projects/"
+                href="https://claudio25.com/it/projects/"
                 />
   </url><url>
-    <loc>https://claudiob25.github.io/it/series/</loc>
+    <loc>https://claudio25.com/it/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://claudiob25.github.io/series/"
+                href="https://claudio25.com/series/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
-                href="https://claudiob25.github.io/it/series/"
+                href="https://claudio25.com/it/series/"
                 />
   </url>
 </urlset>

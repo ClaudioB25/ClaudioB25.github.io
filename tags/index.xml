@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Claudio Bertani</title>
-    <link>https://claudiob25.github.io/tags/</link>
-    <description>Recent content in Tags on Claudio Bertani</description>
+    <title>Tags on Claudio25</title>
+    <link>https://claudio25.com/tags/</link>
+    <description>Recent content in Tags on Claudio25</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudiob25.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>forge</title>
-      <link>https://claudiob25.github.io/tags/forge/</link>
-      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://claudiob25.github.io/tags/forge/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jira</title>
-      <link>https://claudiob25.github.io/tags/jira/</link>
-      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://claudiob25.github.io/tags/jira/</guid>
-      <description></description>
-    </item>
-    
+    <language>en</language><atom:link href="https://claudio25.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

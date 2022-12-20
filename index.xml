@@ -1,48 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Claudio Bertani</title>
-    <link>https://claudiob25.github.io/</link>
-    <description>Recent content on Claudio Bertani</description>
+    <title>Claudio25</title>
+    <link>https://claudio25.com/</link>
+    <description>Recent content on Claudio25</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 18 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudiob25.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Develop Jira plugin with forge - Pt.1</title>
-      <link>https://claudiob25.github.io/posts/jira1/</link>
-      <pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://claudiob25.github.io/posts/jira1/</guid>
-      <description> Articolo non ancora pronto in lingua inglese. Torna tra un po, o cambia lingua con la bandierina in alto a destra! Link to heading Article not yet ready in English. Come back soon, or change language with the flag on the top right! Link to heading </description>
-    </item>
-    
+    <language>en</language><atom:link href="https://claudio25.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://claudiob25.github.io/about/</link>
+      <link>https://claudio25.com/about/</link>
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://claudiob25.github.io/about/</guid>
-      <description>I&amp;rsquo;m enthusiast and motivated, let me know if you find here something interesting!
+      <guid>https://claudio25.com/about/</guid>
+      <description>I&amp;rsquo;m enthusiast and motivated.
+New post every 25th of the month.
 Working Path Link to heading FullStack Dev @ BizCoDe Dec 2017 / Aug 2022
 Design and development of an ecommerce user-friendly layout and data visualization calendar and events for customer&amp;rsquo;s appointment import and user management, administrators pages calendar sync with Google and Office365 Web portal development, to manage customers meetings, planned according to Google Maps data Publish and maintenance of existing applications on Play Store (Android) and App Store (iOS) others&amp;hellip; </description>
     </item>
     
     <item>
-      <title>Contact</title>
-      <link>https://claudiob25.github.io/contact/</link>
+      <title>Contact me</title>
+      <link>https://claudio25.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://claudiob25.github.io/contact/</guid>
-      <description>TODO</description>
+      <guid>https://claudio25.com/contact/</guid>
+      <description> Coming SOON! Link to heading </description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://claudiob25.github.io/projects/</link>
+      <link>https://claudio25.com/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://claudiob25.github.io/projects/</guid>
-      <description> Articolo non ancora pronto in lingua inglese. Torna tra un po, o cambia lingua con la bandierina in alto a destra! Link to heading Article not yet ready in English. Come back soon, or change language with the flag on the top right! Link to heading </description>
+      <guid>https://claudio25.com/projects/</guid>
+      <description> Coming SOON! Link to heading </description>
     </item>
     
   </channel>

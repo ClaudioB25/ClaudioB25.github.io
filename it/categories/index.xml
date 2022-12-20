@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Claudio Bertani</title>
-    <link>https://claudiob25.github.io/it/categories/</link>
-    <description>Recent content in Categories on Claudio Bertani</description>
+    <title>Categories on Claudio25</title>
+    <link>https://claudio25.com/it/categories/</link>
+    <description>Recent content in Categories on Claudio25</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://claudiob25.github.io/it/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://claudio25.com/it/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
