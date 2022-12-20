@@ -5,7 +5,17 @@
     <link>https://claudio25.com/</link>
     <description>Recent content on Claudio25</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://claudio25.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudio25.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Develop Jira plugin with forge</title>
+      <link>https://claudio25.com/posts/1222/</link>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://claudio25.com/posts/1222/</guid>
+      <description> Coming SOON! Link to heading </description>
+    </item>
+    
     <item>
       <title>About</title>
       <link>https://claudio25.com/about/</link>

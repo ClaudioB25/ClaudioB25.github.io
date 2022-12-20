@@ -5,6 +5,25 @@
     <link>https://claudio25.com/tags/</link>
     <description>Recent content in Tags on Claudio25</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://claudio25.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudio25.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>forge</title>
+      <link>https://claudio25.com/tags/forge/</link>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://claudio25.com/tags/forge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jira</title>
+      <link>https://claudio25.com/tags/jira/</link>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://claudio25.com/tags/jira/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

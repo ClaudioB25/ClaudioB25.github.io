@@ -17,18 +17,58 @@
   </url><url>
     <loc>https://claudio25.com/it/posts/1222/</loc>
     <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudio25.com/posts/1222/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudio25.com/it/posts/1222/"
+                />
   </url><url>
     <loc>https://claudio25.com/it/tags/develop/</loc>
     <lastmod>2022-12-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://claudio25.com/it/tags/forge/</loc>
     <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudio25.com/tags/forge/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudio25.com/it/tags/forge/"
+                />
   </url><url>
     <loc>https://claudio25.com/it/tags/jira/</loc>
     <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudio25.com/tags/jira/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudio25.com/it/tags/jira/"
+                />
   </url><url>
     <loc>https://claudio25.com/it/posts/</loc>
     <lastmod>2022-12-19T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudio25.com/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudio25.com/it/posts/"
+                />
   </url><url>
     <loc>https://claudio25.com/it/tags/</loc>
     <lastmod>2022-12-19T00:00:00+00:00</lastmod>
