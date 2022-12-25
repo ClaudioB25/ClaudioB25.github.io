@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>forge on Claudio25</title>
-    <link>https://claudio25.com/it/tags/forge/</link>
-    <description>Recent content in forge on Claudio25</description>
+    <title>development on Claudio25</title>
+    <link>https://claudio25.com/it/tags/development/</link>
+    <description>Recent content in development on Claudio25</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudio25.com/it/tags/forge/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudio25.com/it/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creare un plugin Jira con Forge</title>
       <link>https://claudio25.com/it/posts/1222/</link>

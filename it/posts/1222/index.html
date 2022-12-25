@@ -23,8 +23,8 @@
 <meta property="og:description" content="Creazione di una form personalizzata, mediante la piattaforma di sviluppo forge." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://claudio25.com/it/posts/1222/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-12-19T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-12-19T00:00:00+00:00" /><meta property="og:site_name" content="Claudio25" />
+<meta property="article:published_time" content="2022-12-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-12-25T00:00:00+00:00" /><meta property="og:site_name" content="Claudio25" />
 
 
 
@@ -162,8 +162,8 @@
           <div class="date">
             <span class="posted-on">
               <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime="2022-12-19T00:00:00Z">
-                dicembre 19, 2022
+              <time datetime="2022-12-25T00:00:00Z">
+                dicembre 25, 2022
               </time>
             </span>
             <span class="reading-time">
@@ -184,7 +184,7 @@
     </span>
       <span class="separator">•</span>
     <span class="tag">
-      <a href="/it/tags/develop/">develop</a>
+      <a href="/it/tags/development/">development</a>
     </span></div>
 
         </div>
@@ -359,7 +359,7 @@ Quello che fa al caso nostro è <a href="https://developer.atlassian.com/platfor
 </span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">handler</span>: index.run
 </span></span><span style="display:flex;"><span>    - <span style="color:#ff79c6">key</span>: panel
 </span></span><span style="display:flex;"><span>      <span style="color:#ff79c6">handler</span>: panel.run
-</span></span></code></pre></div><p>Procedo poi a creare il file <code>panel.js</code> che contiene questo:</p>
+</span></span></code></pre></div><p>Procedo poi a creare il file <code>panel.js</code> che contiene:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ff79c6">import</span> ForgeUI, { render, Fragment, Text, IssuePanel, Table, Cell, useEffect, Form, SectionMessage, DatePicker, Select, Option, useState, Toggle, TextArea, useProductContext, Button, TextField, Row } from <span style="color:#f1fa8c">&#39;@forge/ui&#39;</span>;
 </span></span><span style="display:flex;"><span><span style="color:#ff79c6">import</span> api, { storage, route } from <span style="color:#f1fa8c">&#34;@forge/api&#34;</span>;
 </span></span><span style="display:flex;"><span>

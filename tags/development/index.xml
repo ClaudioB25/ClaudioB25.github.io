@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>development on Claudio Bertani</title>
-    <link>https://claudiob25.github.io/tags/development/</link>
-    <description>Recent content in development on Claudio Bertani</description>
+    <title>development on Claudio25</title>
+    <link>https://claudio25.com/tags/development/</link>
+    <description>Recent content in development on Claudio25</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 04 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://claudiob25.github.io/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://claudio25.com/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>External Page: Hugo Coder Wiki</title>
-      <link>https://claudiob25.github.io/posts/hugo-coder-wiki/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Develop Jira plugin with forge</title>
+      <link>https://claudio25.com/posts/1222/</link>
+      <pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://claudiob25.github.io/posts/hugo-coder-wiki/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Página Externa: Wiki Hugo Coder</title>
-      <link>https://claudiob25.github.io/posts/hugo-coder-wiki/</link>
-      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://claudiob25.github.io/posts/hugo-coder-wiki/</guid>
-      <description></description>
+      <guid>https://claudio25.com/posts/1222/</guid>
+      <description>Judge a man by his questions rather than by his answers
+Judge a man by his questions rather than by his answers. — Voltaire1
+Introduction. Link to heading Jira Software allows teams to plan, assign, track, and manage work more easily.
+Born in 2002 initially for bug and ticket monitoring only, it is written in Java, and the name is a truncation of Gojira, Japanese transliteration of Godzilla
+In this article, we will create an application with the Forge development platform, for collecting and sending data to an external server, via a REST call.</description>
     </item>
     
   </channel>
