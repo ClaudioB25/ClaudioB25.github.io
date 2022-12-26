@@ -142,18 +142,6 @@
                 href="https://claudio25.com/contact/"
                 />
   </url><url>
-    <loc>https://claudio25.com/thankyou/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://claudio25.com/it/thankyou/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://claudio25.com/thankyou/"
-                />
-  </url><url>
     <loc>https://claudio25.com/projects/</loc>
     <xhtml:link
                 rel="alternate"
@@ -176,6 +164,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://claudio25.com/series/"
+                />
+  </url><url>
+    <loc>https://claudio25.com/thankyou/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudio25.com/it/thankyou/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudio25.com/thankyou/"
                 />
   </url>
 </urlset>
