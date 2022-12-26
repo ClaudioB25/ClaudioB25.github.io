@@ -13,8 +13,7 @@
       <pubDate>Sun, 25 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://claudio25.com/posts/1222/</guid>
-      <description>Judge a man by his questions rather than by his answers
-Judge a man by his questions rather than by his answers. — Voltaire1
+      <description>Judge a man by his questions rather than by his answers. — Voltaire1
 Introduction. Link to heading Jira Software allows teams to plan, assign, track, and manage work more easily.
 Born in 2002 initially for bug and ticket monitoring only, it is written in Java, and the name is a truncation of Gojira, Japanese transliteration of Godzilla
 In this article, we will create an application with the Forge development platform, for collecting and sending data to an external server, via a REST call.</description>
@@ -37,7 +36,16 @@ Design and development of an ecommerce user-friendly layout and data visualizati
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://claudio25.com/contact/</guid>
-      <description> Coming SOON! Link to heading </description>
+      <description> Send </description>
+    </item>
+    
+    <item>
+      <title>Grazie</title>
+      <link>https://claudio25.com/thankyou/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://claudio25.com/thankyou/</guid>
+      <description> Ho ricevuto il tuo messaggio, ti risponderò il prima possibile! Link to heading </description>
     </item>
     
     <item>

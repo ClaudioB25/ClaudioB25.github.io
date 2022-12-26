@@ -165,5 +165,17 @@
                 hreflang="it"
                 href="https://claudio25.com/it/series/"
                 />
+  </url><url>
+    <loc>https://claudio25.com/it/thankyou/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://claudio25.com/thankyou/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://claudio25.com/it/thankyou/"
+                />
   </url>
 </urlset>

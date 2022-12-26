@@ -36,7 +36,7 @@ Analisi, progettazione e sviluppo ecommerce su misura layout ricerche e presenta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://claudio25.com/it/contact/</guid>
-      <description> Non c&amp;rsquo;è ancora niente&amp;hellip; torna tra un po&#39;! Link to heading </description>
+      <description> Invia </description>
     </item>
     
     <item>
@@ -46,6 +46,15 @@ Analisi, progettazione e sviluppo ecommerce su misura layout ricerche e presenta
       
       <guid>https://claudio25.com/it/projects/</guid>
       <description> Non c&amp;rsquo;è ancora niente&amp;hellip; torna tra un po&#39;! Link to heading </description>
+    </item>
+    
+    <item>
+      <title>Thank You</title>
+      <link>https://claudio25.com/it/thankyou/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://claudio25.com/it/thankyou/</guid>
+      <description> I received your message, I will reply as soon as possible Link to heading </description>
     </item>
     
   </channel>
