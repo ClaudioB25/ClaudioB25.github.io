@@ -45,7 +45,10 @@ Design and development of an ecommerce user-friendly layout and data visualizati
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://claudio25.com/projects/</guid>
-      <description> Ecommerce &amp;amp; CRM Link to heading Cross-platform application (Browser, Android, Ios) with personal agenda, management integration, real-time pricing and item availability </description>
+      <description>Jira Plugin Link to heading Plugin for submitting a custom form to an external server; endpoint configuration page
+Read More
+Source code
+Ecommerce &amp;amp; CRM Link to heading Cross-platform application (Browser, Android, Ios) with personal agenda, management integration, real-time pricing and item availability Cordova Plugin - NFC BT Reader Link to heading I adapded a Java library to cordova plugin, to be to scan NFC tags in my Angular app, with an external Bluethoot reader.</description>
     </item>
     
     <item>

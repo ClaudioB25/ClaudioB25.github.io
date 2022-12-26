@@ -25,7 +25,7 @@ In questo articolo, creeremo un’applicazione con la piattaforma di sviluppo Fo
       <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://claudio25.com/it/about/</guid>
-      <description> Nuovo post ogni 25 del mese.
+      <description>Nuovo post ogni 25 del mese.
 Esperienze lavorative Link to heading FullStack Dev @ BizCoDe Dic 2017 / Ago 2022
 Analisi, progettazione e sviluppo ecommerce su misura layout ricerche e presentazione dati user-friendly gestione clienti e appuntamenti per agenti commerciali importazione e gestione utenti per gli amministratori agenda sincronizzata con Calendar e Office365 integrazione dati 4.0 Sviluppo portale web, pianificazioni visite ai clienti, calcolando tempistiche di permanenza e di viaggio, sincronizzato con Calendar e GMaps Analisi, progettazione e sviluppo di un app di timbratura offline, integrazione controllo green pass, sincronia gestionale Pubblicazione e mantenimento delle applicazioni su Play Store (Android) e App Store (iOS) Mantenimento app per rapportini in mobilità e gestione attività </description>
     </item>
@@ -54,7 +54,10 @@ Analisi, progettazione e sviluppo ecommerce su misura layout ricerche e presenta
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://claudio25.com/it/projects/</guid>
-      <description> Ecommerce &amp;amp; CRM Link to heading Applicativo multipiattaforma (Browser, Android, Ios) con agenda personale, integrazione con il gestionale, prezzi e disponibilità articoli in tempo reale </description>
+      <description>Jira Plugin Link to heading App Forge per l&amp;rsquo;invio di una form personalizzata via REST api - pagina di configurazione dell&amp;rsquo;endpoint
+Guida Completa
+Sorgente
+Ecommerce &amp;amp; CRM Link to heading Applicativo multipiattaforma (Browser, Android, Ios) con agenda personale, integrazione con il gestionale, prezzi e disponibilità articoli in tempo reale Cordova Plugin - NFC BT Reader Link to heading Ho adattato una libreria Java ad un plugin Cordova, per scansionare i tag NFC con un lettore Bluethoot esterno nella mia applicazione Angular</description>
     </item>
     
   </channel>
